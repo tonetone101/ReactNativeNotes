@@ -1,11 +1,22 @@
+// FlatList is for rendering arrays
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, FlatList } from "react-native";
 
 const ListScreen = () => {
+  const kids = [
+    { name: "Jayna Keo" },
+    { name: "Quincy Leav" },
+    { name: "Nahvy Keo" },
+    { name: "Damian Keo" },
+  ];
+
   return (
-    <View>
-      <Text>List Screen</Text>
-    </View>
+    <FlatList
+      data={kids}
+      renderItem={({ item }) => {
+        return <Text>{item.name}</Text>;
+      }}
+    ></FlatList>
   );
 };
 
