@@ -4,23 +4,35 @@ import ComponentsScreen from "./ComponentsScreen";
 import ListScreen from "./ListScreen";
 
 // Props come from app component
-const HomeScreen = (props) => {
+const HomeScreen = ({ navigation }) => {
   return (
     <View>
       <Text style={styles.text}>Homescreen!</Text>
       {/* Button element */}
       <Button
         // sends us to ComponentsScreen
-        onPress={() => props.navigation.navigate("Components")}
-        title="Go to Components Demo"
+        onPress={() => navigation.navigate("Components")}
+        title="Go to components Demo"
       />
 
-      <TouchableOpacity
+      <Button
+        style={styles.margins}
+        title="Go to list demo"
+        onPress={() => navigation.navigate("List")}
+      />
+
+      <Button
+        style={styles.margins}
+        title="Go to image demo"
+        onPress={() => navigation.navigate("Image")}
+      />
+
+      {/*<TouchableOpacity
         //sends us to listScreen
-        onPress={() => props.navigation.navigate("List")}
+        onPress={() => navigation.navigate("List")}
       >
         <Text>Go to list Demo</Text>
-      </TouchableOpacity>
+      </TouchableOpacity>*/}
     </View>
   );
 };
@@ -28,6 +40,9 @@ const HomeScreen = (props) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30,
+  },
+  margins: {
+    marginVertical: 50,
   },
 });
 
