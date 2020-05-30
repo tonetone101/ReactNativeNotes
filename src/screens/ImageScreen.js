@@ -6,10 +6,10 @@ import ImageDetail from "../components/ImageDetail";
 const ImageScreen = () => {
   return (
     <View>
-      <ImageDetail />
-      <ImageDetail />
-      <ImageDetail />
-      <ImageDetail />
+      {/* sending down props called title*/}
+      <ImageDetail title="Goku" />
+      <ImageDetail title="Vegeta" />
+      <ImageDetail title="Broly" />
     </View>
   );
 };

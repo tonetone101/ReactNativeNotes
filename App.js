@@ -15,7 +15,7 @@ const navigator = createStackNavigator(
   {
     initialRouteName: "Home",
     defaultNavigationOptions: {
-      title: "4Impact",
+      title: "CodeWorldInc",
     },
   }
 );
