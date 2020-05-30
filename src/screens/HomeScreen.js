@@ -7,7 +7,7 @@ import ListScreen from "./ListScreen";
 const HomeScreen = ({ navigation }) => {
   return (
     <View>
-      <Text style={styles.text}>Homescreen!</Text>
+      <Text style={styles.text}>Homescreen</Text>
       {/* Button element */}
       <Button
         // sends us to ComponentsScreen

@@ -7,9 +7,9 @@ const ImageScreen = () => {
   return (
     <View>
       {/* sending down props called title*/}
-      <ImageDetail title="Goku" />
-      <ImageDetail title="Vegeta" />
-      <ImageDetail title="Broly" />
+      <ImageDetail title="Beach" />
+      <ImageDetail title="Forest" />
+      <ImageDetail title="Mountain" />
     </View>
   );
 };

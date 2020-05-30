@@ -1,9 +1,22 @@
 import React from "react";
-import { Text, StyleSheet, Button, View, TouchableOpacity } from "react-native";
+import {
+  Text,
+  StyleSheet,
+  Image,
+  Button,
+  View,
+  TouchableOpacity,
+} from "react-native";
+import { isRequired } from "react-native/Libraries/DeprecatedPropTypes/DeprecatedColorPropType";
 
 // title is a prop from ImageScreen component
 const ImageDetail = ({ title }) => {
-  return <Text>Show Image of {title}</Text>;
+  return (
+    <View>
+      <Image source={require("../../assets/beach.jpg")} />
+      <Text>Show Image of {title}</Text>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
