@@ -10,11 +10,12 @@ import {
 import { isRequired } from "react-native/Libraries/DeprecatedPropTypes/DeprecatedColorPropType";
 
 // title amd imageSource is a prop from ImageScreen component
-const ImageDetail = ({ title, imageSource }) => {
+const ImageDetail = ({ title, imageSource, imageScore }) => {
   return (
     <View>
       <Image source={imageSource} />
-      <Text>Show Image of {title}</Text>
+      <Text>{title}</Text>
+      <Text>Image score - {imageScore}</Text>
     </View>
   );
 };
