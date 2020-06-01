@@ -35,7 +35,7 @@ const HomeScreen = ({ navigation }) => {
 
       <Button
         style={styles.margins}
-        title="Go to counter demo"
+        title="Go to color demo"
         onPress={() => navigation.navigate("Color")}
       />
 
